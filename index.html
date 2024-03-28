@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <style>
+        .js-heading {
+            color: #800080;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="js-heading">Welcome To Javascript..!</h1>
+
+    <script>
+
+        // calculate the area of a circle
+        function calculateArea(radius) {
+            return Math.PI * radius * radius;
+        }
+        const radius = 5;
+        const area = calculateArea(radius);
+        console.log("The area of the circle is", area);
+
+
+        //Argument and Return
+        function calculateArea(radius) {
+            const area = Math.PI * radius * radius;
+            return area;
+        }
+        const radius1 = 5;
+        const area1 = calculateArea(radius1);
+        console.log("The area of the circle is", area1);
+
+
+        // No Argument But Return
+        function calculateArea() {
+            const radius2 = 5;
+            const area = Math.PI * radius * radius;
+            return area;
+        }
+        const area2 = calculateArea();
+        console.log("The area of the circle is", area2);
+
+
+        //Argument But No Return
+        function calculateArea(radius) {
+            const area = Math.PI * radius * radius;
+            console.log("The area of the circle is", area);
+        }
+        const radius3 = 5;
+        calculateArea(radius);
+
+
+        //No Argument No Return
+        function calculateArea() {
+            const radius4 = 5;
+            const area = Math.PI * radius * radius;
+            console.log("The area of the circle is", area);
+        }
+        calculateArea();
+
+
+    </script>
+</body>
+
+</html>
